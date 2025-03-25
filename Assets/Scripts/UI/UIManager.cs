@@ -274,17 +274,17 @@ public class UIManager : MonoBehaviour
             });
 
         if (NoQuit_Button) NoQuit_Button.onClick.RemoveAllListeners();
-        if (NoQuit_Button) NoQuit_Button.onClick.AddListener(delegate { if (!isExit) { 
+        if (NoQuit_Button) NoQuit_Button.onClick.AddListener(delegate { 
             ClosePopup(QuitPopup_Object); 
             Debug.Log("quit event: pressed NO Button ");
-            } });
+             });
 
         if (CrossQuit_Button) CrossQuit_Button.onClick.RemoveAllListeners();
-        if (CrossQuit_Button) CrossQuit_Button.onClick.AddListener(delegate { if (!isExit) { 
+        if (CrossQuit_Button) CrossQuit_Button.onClick.AddListener(delegate { 
             ClosePopup(QuitPopup_Object); 
             Debug.Log("quit event: pressed Small_X Button ");
             
-            } });
+             });
 
         if (LBExit_Button) LBExit_Button.onClick.RemoveAllListeners();
         if (LBExit_Button) LBExit_Button.onClick.AddListener(delegate { ClosePopup(LBPopup_Object); });
