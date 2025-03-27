@@ -326,7 +326,7 @@ public class SocketIOManager : MonoBehaviour
                     }
                     // Application.ExternalCall("window.parent.postMessage", "OnEnter", "*");
 #if UNITY_WEBGL && !UNITY_EDITOR
-        JSManager.SendCustomMessage("OnEnter");
+         JSManager.SendCustomMessage("onExit");
 #endif
                     break;
                 }
